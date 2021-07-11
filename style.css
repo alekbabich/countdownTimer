@@ -2,16 +2,10 @@
   box-sizing: border-box;
 }
 
-h1 {
-  font-size: 4rem;
-  font-weight: normal;
-  margin: 1rem;
-}
-
 body {
   color: white;
-  background-image: url("./images/fireworks.jpg");
-  background-size: contain;
+  background-image: url("./images/hour_glass.jpg");
+  background-size: cover;
   background-position: center center;
   display: flex;
   align-items: center;
@@ -29,13 +23,32 @@ body {
   font-size: 3rem;
   line-height: 1;
   margin: 0 2rem;
+  padding-top: 2rem;
 }
 
 .countdown-element {
   text-align: center;
+  color: white;
 }
 
 .countdown-element span {
   font-size: 1.5rem;
   font-weight: bold;
+}
+
+.input-date-header {
+  color: white;
+  font-weight: bold;
+  font-size: 2.5rem;
+  padding-bottom: 0.25ren;
+  padding-top: 2rem;
+  display: flex;
+  text-align: center;
+}
+
+.input-date {
+  font-size: 2rem;
+  line-height: 1;
+  margin: 0 2rem;
+  color: rgb(183, 159, 230);
 }

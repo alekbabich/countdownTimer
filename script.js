@@ -2,11 +2,12 @@ const daysElement = document.getElementById("days");
 const hoursElement = document.getElementById("hours");
 const minutesElement = document.getElementById("minutes");
 const secondsElement = document.getElementById("seconds");
+const initialDateElement = document.getElementById("input-date");
 
-const newYears = "3 Dec 2021";
+var desiredDate = prompt("Please enter a date to countdown to", "01 Jan 2022");
 
 function countdown() {
-  const newYearsDate = new Date(newYears);
+  const newYearsDate = new Date(desiredDate);
   const currentDate = new Date();
 
   // 86400000 Milliseconds in a day
@@ -19,6 +20,7 @@ function countdown() {
   hoursElement.innerHTML = formatTime(hours);
   minutesElement.innerHTML = formatTime(minutes);
   secondsElement.innerHTML = formatTime(seconds);
+  initialDateElement.innerHTML = desiredDate;
 }
 
 function formatTime(time) {
