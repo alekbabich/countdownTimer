@@ -5,7 +5,7 @@
 body {
   color: white;
   background-image: url("./images/hour_glass.jpg");
-  background-size: cover;
+  background-size: 100%;
   background-position: center center;
   display: flex;
   align-items: center;
